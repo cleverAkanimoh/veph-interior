@@ -12,6 +12,7 @@ export interface PortfolioProject {
   keyMaterials: string[];
   squareMeters: number;
   highlightKpi?: string;
+  specCode?: string;
 }
 
 export type ProjectStatus = 
@@ -95,4 +96,20 @@ export interface DesignAdviceResult {
   ceilingAndLightingStrategy: string;
   localUyoProcurementAdvice: string;
   estimatedTimelineWeeks: string;
+}
+
+export interface InteriorSpecification {
+  id: string;
+  specCode: string;
+  title: string;
+  tradeCategory: 'Joinery & Millwork' | 'Ceilings & POP Plaster' | 'Flooring & Slabs' | 'Lighting & Electrical' | 'Walls & Finishes' | 'Fenestration & Textiles';
+  substrateMaterial: string;
+  finishSheen: string;
+  tolerancesAndFixing: string;
+  climateResistance: string;
+  recommendedLocation: string;
+  fireRating: string;
+  localSourcingNotes: string;
+  leadTimeWeeks: string;
+  image: string;
 }

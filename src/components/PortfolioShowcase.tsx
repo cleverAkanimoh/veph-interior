@@ -72,7 +72,7 @@ export const PortfolioShowcase: React.FC<PortfolioShowcaseProps> = ({
           <div className="relative w-full h-[360px] sm:h-[460px] rounded-xl overflow-hidden select-none bg-neutral-950">
             {/* After Image (Full width background) */}
             <img
-              src="/src/assets/images/before_after_renovation_1794399893307.jpg"
+              src="/images/before_after_renovation.jpg"
               alt="After Veph Interiors executive suite fitout"
               className="absolute inset-0 w-full h-full object-cover"
             />
@@ -86,7 +86,7 @@ export const PortfolioShowcase: React.FC<PortfolioShowcaseProps> = ({
               style={{ width: `${sliderPosition}%` }}
             >
               <img
-                src="/src/assets/images/hero_interior_uyo_1794399891616.jpg"
+                src="/images/hero_interior_uyo.jpg"
                 alt="Before spatial condition"
                 className="absolute inset-0 w-full h-full object-cover filter contrast-125 sepia-[0.3]"
                 style={{ width: '100%', minWidth: '100%' }}

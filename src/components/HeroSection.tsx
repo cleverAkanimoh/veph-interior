@@ -74,7 +74,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Right Column: Visual Anchor */}
           <div className="lg:col-span-6 relative min-h-[380px] lg:min-h-full rounded-2xl overflow-hidden border border-neutral-200/80 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900 group shadow-lg">
             <img
-              src="/src/assets/images/hero_interior_uyo_1794399891616.jpg"
+              src="/images/hero_interior_uyo.jpg"
               alt="Veph Interiors living room design in Uyo with sculptural POP ceiling and travertine floor"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

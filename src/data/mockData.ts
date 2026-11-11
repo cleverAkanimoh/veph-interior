@@ -1,4 +1,4 @@
-import { PortfolioProject, ClientProject, MaterialItem, Artisan } from '../types';
+import { PortfolioProject, ClientProject, MaterialItem, Artisan, InteriorSpecification } from '../types';
 
 export const INITIAL_PORTFOLIO: PortfolioProject[] = [
   {
@@ -10,11 +10,12 @@ export const INITIAL_PORTFOLIO: PortfolioProject[] = [
     year: '2025',
     scope: 'Complete Interior Architecture, Sculptural POP Ceilings, Bespoke Woodwork',
     description: 'A 650 sqm residential transformation featuring curvilinear acoustic POP ceilings, Italian honed travertine flooring, hidden 3000K ambient cove profiles, and custom fluted oak cabinetry curated for tropical cross-ventilation.',
-    image: '/src/assets/images/hero_interior_uyo_1794399891616.jpg',
-    beforeImage: '/src/assets/images/before_after_renovation_1794399893307.jpg',
+    image: '/images/hero_interior_uyo.jpg',
+    beforeImage: '/images/before_after_renovation.jpg',
     keyMaterials: ['Gypsum Plaster of Paris', '18mm Marine Plywood', 'Honed Roman Travertine', '24V COB LED Strips'],
     squareMeters: 650,
-    highlightKpi: 'Handover Completed in 7 Weeks'
+    highlightKpi: 'Handover Completed in 7 Weeks',
+    specCode: 'VEPH-SPEC-CL01'
   },
   {
     id: 'proj-2',
@@ -25,10 +26,11 @@ export const INITIAL_PORTFOLIO: PortfolioProject[] = [
     year: '2025',
     scope: 'Master Bedroom Suite, Acoustic Fluted Wall Panels, Brass Bedside Pendants',
     description: 'Deep forest emerald velvet upholstery anchored with vertical fluted timber slats, brushed brass inlays, recessed cove perimeter illumination, and climate-resistant engineered hardwood.',
-    image: '/src/assets/images/portfolio_shelter_afrique_1794399893564.jpg',
+    image: '/images/portfolio_shelter_afrique.jpg',
     keyMaterials: ['Moisture-Resistant MDF Slats', 'Deep Emerald Velvet', 'Brushed Brass Pendants', 'Acoustic Backing'],
     squareMeters: 85,
-    highlightKpi: '100% Custom Joinery'
+    highlightKpi: '100% Custom Joinery',
+    specCode: 'VEPH-SPEC-WD02'
   },
   {
     id: 'proj-3',
@@ -39,10 +41,11 @@ export const INITIAL_PORTFOLIO: PortfolioProject[] = [
     year: '2026',
     scope: 'Coffered Geometric Ceiling, Calacatta Marble Dining, Sheer Floor Drapery',
     description: 'Curated architectural dining pavilion featuring a 10-seater natural Calacatta marble slab, custom step-down coffered tray with anti-glare downlights, and warm brass sculptural pendant.',
-    image: '/src/assets/images/portfolio_osongama_dining_1794399892087.jpg',
+    image: '/images/portfolio_osongama_dining.jpg',
     keyMaterials: ['Calacatta Marble Slab', 'Cast POP Coffers', 'Warm Brass Sputnik Chandelier', 'Belgian Sheer Linen'],
     squareMeters: 55,
-    highlightKpi: 'Zero Joint Marble Finishing'
+    highlightKpi: 'Zero Joint Marble Finishing',
+    specCode: 'VEPH-SPEC-FL03'
   },
   {
     id: 'proj-4',
@@ -53,10 +56,11 @@ export const INITIAL_PORTFOLIO: PortfolioProject[] = [
     year: '2025',
     scope: 'Modern Tropical Facade, Exterior Accent Lighting, Cantilever Louvers',
     description: 'Striking exterior modernism blending thermo-treated composite wood panels, rain-screen porcelain cladding, and integrated exterior architectural sconces framing native palm landscaping.',
-    image: '/src/assets/images/portfolio_exterior_facade_1794399893843.jpg',
+    image: '/images/portfolio_exterior_facade.jpg',
     keyMaterials: ['Thermo-treated Wood Composite', 'Weather-Guard Textured Stucco', 'IP65 Brass Sconces', 'Tempered Balustrade'],
     squareMeters: 420,
-    highlightKpi: 'Weatherproof UV Guarantee'
+    highlightKpi: 'Weatherproof UV Guarantee',
+    specCode: 'VEPH-SPEC-EX04'
   },
   {
     id: 'proj-5',
@@ -67,10 +71,89 @@ export const INITIAL_PORTFOLIO: PortfolioProject[] = [
     year: '2025',
     scope: 'Acoustic Wall Panelling, Executive Leather Banquettes, Minimalist Lighting',
     description: 'An executive boardroom that doubles as an evening hospitality suite, featuring bespoke sound-absorbing slatted wall baffles, cognac leather seating, and recessed warm brass linear fixtures.',
-    image: '/src/assets/images/before_after_renovation_1794399893307.jpg',
+    image: '/images/before_after_renovation.jpg',
     keyMaterials: ['Acoustic Oak Slats', 'Full-Grain Cognac Leather', 'Minimalist Linear LED Track', 'Smoked Bronze Glass'],
     squareMeters: 120,
-    highlightKpi: 'Sound Transmission Class 48'
+    highlightKpi: 'Sound Transmission Class 48',
+    specCode: 'VEPH-SPEC-WD01'
+  }
+];
+
+export const INTERIOR_SPECIFICATIONS: InteriorSpecification[] = [
+  {
+    id: 'spec-1',
+    specCode: 'VEPH-SPEC-WD01',
+    title: 'Bespoke Fluted Walnut Joinery & Wardrobe Suite',
+    tradeCategory: 'Joinery & Millwork',
+    substrateMaterial: '18mm Boiling-Water-Proof (BWP) Marine Hardwood Plywood with 1.2mm American Walnut fluted solid battens',
+    finishSheen: 'Matte 10% Polyurethane architectural clear lacquer with anti-yellowing UV barrier',
+    tolerancesAndFixing: 'Concealed French cleat mounting, soft-close Blumotion 110° hinges, brushed brass bar pulls with M4 threaded inserts',
+    climateResistance: 'Class 3 High-Humidity Protection; edge-sealed with polyurethane reactive (PUR) hot melt against tropical moisture ingress',
+    recommendedLocation: 'Master walk-in closets, bespoke entertainment media walls, executive study credenzas',
+    fireRating: 'Class B-s1, d0 flame-retardant treated core',
+    localSourcingNotes: 'Marine core imported via Lagos; CNC milling, vacuum-membrane veneering, and hand-finishing executed at Veph Uyo Workshop (Timber Market axis)',
+    leadTimeWeeks: '3 to 4 Weeks',
+    image: '/images/spec_joinery_wardrobe.jpg'
+  },
+  {
+    id: 'spec-2',
+    specCode: 'VEPH-SPEC-CL01',
+    title: 'Sculptural Curvilinear POP Ceiling Tray & Cove System',
+    tradeCategory: 'Ceilings & POP Plaster',
+    substrateMaterial: 'High-Purity Plaster of Paris (POP) reinforced with virgin sisal fiber matrix and galvanized lightweight C-channel steel suspension',
+    finishSheen: 'Jotun Fenomastic Pure Silk Ultra-Flat Ceiling White (Reflectance LRV 88%)',
+    tolerancesAndFixing: 'Continuous seamless jointing, floating 120mm perimeter cove cavity with integrated aluminum heat-sink extrusion for LED mounting',
+    climateResistance: 'Reinforced anti-sag composition with moisture-resistant bonding primer formulated for coastal Akwa Ibom humidity',
+    recommendedLocation: 'Formal living salons, dining halls, master penthouse lounges in Shelter Afrique and Ewet Housing',
+    fireRating: 'Non-combustible Class A1 (BS 476 Part 4)',
+    localSourcingNotes: 'Cast on-site by Veph master plasterers; high-grade gypsum bags sourced from central Abak Road depot in Uyo',
+    leadTimeWeeks: '2 to 3 Weeks',
+    image: '/images/spec_ceiling_pop_detail.jpg'
+  },
+  {
+    id: 'spec-3',
+    specCode: 'VEPH-SPEC-FL01',
+    title: 'Honed Roman Travertine & Calacatta Porcelain Slab',
+    tradeCategory: 'Flooring & Slabs',
+    substrateMaterial: 'Large-format 1200x600mm rectified porcelain tile with rectified micro-beveled edge and vitrified density > 2.4 g/cm³',
+    finishSheen: 'Honed satin-matte (R10 slip resistance rating, pendulum test 36+ wet)',
+    tolerancesAndFixing: '1.5mm micro-grout joint using epoxy anti-mold grout (Mapei Kerapoxy); leveled with mechanical screw-cap leveling system',
+    climateResistance: 'Zero water absorption (< 0.05%), non-porous, thermal buffer against tropical ambient heat',
+    recommendedLocation: 'Ground floor salons, circulation corridors, high-traffic executive lounges',
+    fireRating: 'Class A1fl non-combustible',
+    localSourcingNotes: 'Direct container allocation from Port Harcourt bonded terminal; stocked at Veph staging hub in Uyo',
+    leadTimeWeeks: '1 to 2 Weeks (In Stock)',
+    image: '/images/portfolio_osongama_dining.jpg'
+  },
+  {
+    id: 'spec-4',
+    specCode: 'VEPH-SPEC-LT01',
+    title: 'Architectural 24V COB Linear & Magnetic Track Lighting',
+    tradeCategory: 'Lighting & Electrical',
+    substrateMaterial: 'Extruded aluminum 6063-T5 housing with continuous silicone dotless diffuser and 24V DC constant voltage bus',
+    finishSheen: 'Electrostatic powder-coated fine textured matte black and brushed natural brass trim',
+    tolerancesAndFixing: 'Zero-reveal trimless plaster-in profile; magnetic click-in spotlight fixtures with 360° pan and 90° tilt',
+    climateResistance: 'IP20 indoor with conformal coated PCB drivers for corrosion resistance against coastal Akwa Ibom humidity',
+    recommendedLocation: 'Perimeter ceiling coves, fluted wall vertical grazing, artwork illumination in Osongama and Shelter Afrique',
+    fireRating: 'UL94 V-0 flame-retardant silicone diffuser',
+    localSourcingNotes: 'MeanWell constant voltage power units; assembled and bench-tested at Veph Uyo electrical workshop prior to installation',
+    leadTimeWeeks: '1 to 2 Weeks',
+    image: '/images/before_after_renovation.jpg'
+  },
+  {
+    id: 'spec-5',
+    specCode: 'VEPH-SPEC-TX01',
+    title: 'Bespoke Belgian Sheer Linen & Triple-Weave Blackout Drapery',
+    tradeCategory: 'Fenestration & Textiles',
+    substrateMaterial: 'Natural Belgian linen weave sheer (180 GSM) paired with 100% triple-weave high-density polyester blackout lining (320 GSM)',
+    finishSheen: 'Soft natural textile drape with organic slub texture; UV-stabilized anti-fade pigment',
+    tolerancesAndFixing: 'Double-fullness (2.2x fullness) wave fold (S-fold) heading mounted on motorized silent-glide ceiling-recessed aluminum tracks',
+    climateResistance: 'Mildew-resistant anti-fungal treatment; provides up to 72% solar thermal heat deflection',
+    recommendedLocation: 'Full-height floor-to-ceiling glass fenestrations in master suites and living lounges',
+    fireRating: 'NFPA 701 flame-retardant compliant',
+    localSourcingNotes: 'Precision cut, tailored, and weighted by Veph soft-furnishing seamstresses on Idongesit Ntem Isua Ave',
+    leadTimeWeeks: '2 Weeks',
+    image: '/images/portfolio_shelter_afrique.jpg'
   }
 ];
 
@@ -90,10 +173,10 @@ export const INITIAL_CLIENT_PROJECTS: ClientProject[] = [
     targetHandover: '2026-03-25',
     siteSupervisor: 'Victor Ephraim',
     supervisorPhone: '+234 812 916 0273',
-    recentUpdate: 'Bespoke walnut TV wall framing installed; POP cove light strips tested and commissioned.',
+    recentUpdate: 'Bespoke walnut TV wall framing installed; POP cove light strips tested and commissioned according to VEPH-SPEC-WD01.',
     milestones: [
       { id: 'm1', name: 'Site Laser Measurement & 3D Approval', status: 'Completed', targetDate: '2026-01-18', notes: 'Client signed off render v2' },
-      { id: 'm2', name: 'Civil Dismantling & POP Ceiling Framing', status: 'Completed', targetDate: '2026-02-05', notes: 'Curved tray cast with moisture-proof plaster' },
+      { id: 'm2', name: 'Civil Dismantling & POP Ceiling Framing', status: 'Completed', targetDate: '2026-02-05', notes: 'Curved tray cast with moisture-proof plaster (VEPH-SPEC-CL01)' },
       { id: 'm3', name: 'Electrical 1st Fix & Conduit Routing', status: 'Completed', targetDate: '2026-02-14', notes: 'Low-voltage 24V bus lines pulled' },
       { id: 'm4', name: 'Cabinetry Fabrication & Wall Panelling', status: 'In Progress', targetDate: '2026-03-05', notes: 'Assembly on site underway' },
       { id: 'm5', name: 'Final Paint, Drapery & Client Walkthrough', status: 'Pending', targetDate: '2026-03-25', notes: 'Deep cleaning and styling' }
@@ -114,7 +197,7 @@ export const INITIAL_CLIENT_PROJECTS: ClientProject[] = [
     targetHandover: '2026-03-12',
     siteSupervisor: 'Edet Sunday (Lead Joiner)',
     supervisorPhone: '+234 803 456 7812',
-    recentUpdate: 'Custom emerald headboard and bronze glass wardrobe doors installed. Final paint touchup underway.',
+    recentUpdate: 'Custom emerald headboard and bronze glass wardrobe doors installed per VEPH-SPEC-WD01. Final paint touchup underway.',
     milestones: [
       { id: 'm1', name: 'Design Moodboard & Material Approval', status: 'Completed', targetDate: '2026-01-26', notes: 'Selected emerald velvet and smoked glass' },
       { id: 'm2', name: 'Ceiling Dropping & Lighting Rails', status: 'Completed', targetDate: '2026-02-10', notes: 'Magnetic track installed' },
@@ -137,7 +220,7 @@ export const INITIAL_CLIENT_PROJECTS: ClientProject[] = [
     targetHandover: '2026-04-18',
     siteSupervisor: 'Victor Ephraim',
     supervisorPhone: '+234 812 916 0273',
-    recentUpdate: 'POP casting ongoing; acoustic ceiling grid hung; electrical conduit channeling completed.',
+    recentUpdate: 'POP casting ongoing; acoustic ceiling grid hung; electrical conduit channeling completed per VEPH-SPEC-CL01.',
     milestones: [
       { id: 'm1', name: '3D Walkthrough & BOQ Acceptance', status: 'Completed', targetDate: '2026-02-20', notes: 'Initial deposit confirmed' },
       { id: 'm2', name: 'Wall Scraping & POP Ceiling Casting', status: 'In Progress', targetDate: '2026-03-10', notes: 'POP team on site' },
@@ -161,7 +244,7 @@ export const INITIAL_CLIENT_PROJECTS: ClientProject[] = [
     targetHandover: '2026-05-30',
     siteSupervisor: 'Victor Ephraim',
     supervisorPhone: '+234 812 916 0273',
-    recentUpdate: 'Architectural survey complete; initial 3D visualization presented to board of directors.',
+    recentUpdate: 'Architectural survey complete; initial 3D visualization presented to board of directors with VEPH-SPEC-WD01 millwork.',
     milestones: [
       { id: 'm1', name: 'Space Audit & Acoustic Assessment', status: 'Completed', targetDate: '2026-03-02', notes: 'Evaluated street noise damping requirements' },
       { id: 'm2', name: '3D Render & Material Spec Presentation', status: 'In Progress', targetDate: '2026-03-15', notes: 'Reviewing fluted acoustic wall finishes' },
@@ -353,7 +436,7 @@ export const BRAND_CONTACT = {
   title: 'Principal Designer & Project Manager',
   address: 'Idongesit Ntem Isua Avenue, Uyo 520101, Akwa Ibom State, Nigeria',
   phone: '+234 812 916 0273',
-  whatsappDirect: 'https://wa.me/2348129160273?text=Hello%20Veph%20Interiors,%20I%20would%20like%20to%20discuss%20a%20design%20project%20in%20Akwa%20Ibom',
+  whatsappDirect: 'https://wa.me/2348129160273?text=Hello%20Veph%20Interiors,%20I%20would%20like%20to%20discuss%20an%20interior%20specification%20in%20Akwa%20Ibom',
   email: 'vephinteriors@gmail.com',
   workingHours: 'Mon – Sat: 8:00 AM – 6:30 PM WAT'
 };

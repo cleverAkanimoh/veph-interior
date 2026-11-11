@@ -6,11 +6,13 @@ import { ProjectTracker } from './components/ProjectTracker';
 import { MaterialLedger } from './components/MaterialLedger';
 import { QuoteEstimator } from './components/QuoteEstimator';
 import { AiDesignAdvisor } from './components/AiDesignAdvisor';
+import { InteriorSpecifications } from './components/InteriorSpecifications';
 import { ConsultationModal } from './components/ConsultationModal';
 import { Footer } from './components/Footer';
 
 import {
   INITIAL_PORTFOLIO,
+  INTERIOR_SPECIFICATIONS,
   INITIAL_CLIENT_PROJECTS,
   INITIAL_MATERIALS,
   INITIAL_ARTISANS,
@@ -143,6 +145,12 @@ export default function App() {
         {/* Portfolio Showcase with Before/After Slider & Lightbox */}
         <PortfolioShowcase
           projects={INITIAL_PORTFOLIO}
+        />
+
+        {/* Architectural Finishes & Interior Specifications */}
+        <InteriorSpecifications
+          specifications={INTERIOR_SPECIFICATIONS}
+          onOpenConsultation={() => setIsConsultationOpen(true)}
         />
 
         {/* Live Client Project Tracker */}

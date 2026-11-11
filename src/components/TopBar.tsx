@@ -18,6 +18,7 @@ export const TopBar: React.FC<TopBarProps> = ({
 }) => {
   const navLinks = [
     { id: 'portfolio', label: 'Portfolio' },
+    { id: 'specifications', label: 'Interior Specs' },
     { id: 'tracker', label: 'Project Tracker' },
     { id: 'materials', label: 'Materials & BOQ' },
     { id: 'estimator', label: 'Cost Estimator' },
